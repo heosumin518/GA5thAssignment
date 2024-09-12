@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Basic_Frame_Works">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Demo_Exts">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Demo_Exts\Shader">
+      <UniqueIdentifier>{3567d599-d372-47af-b63c-dda60928c975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo_Exts\Shader\fx">
+      <UniqueIdentifier>{b7ff32ad-7824-4deb-998e-4dec607900c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo_Exts\Model">
+      <UniqueIdentifier>{f4e51c85-c942-4f7a-82d1-0b705010db0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo_Exts\Light">
+      <UniqueIdentifier>{d6150ede-d141-4a2b-a89c-6e75ac1591fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo_Exts\Map">
+      <UniqueIdentifier>{a1285676-a70e-421e-b806-ea2a8e79a0c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo_Exts\Camera">
+      <UniqueIdentifier>{cefb57d3-8033-4580-8966-650cb40ac6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo_Exts\RTarget">
+      <UniqueIdentifier>{cf376a08-17e9-4a33-8bb7-5a7e17d68236}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\main.cpp">
+      <Filter>Basic_Frame_Works</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Render.cpp">
+      <Filter>Demo_Exts</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Device.cpp">
+      <Filter>Basic_Frame_Works</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Shader.cpp">
+      <Filter>Demo_Exts\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Map.cpp">
+      <Filter>Demo_Exts\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Camera.cpp">
+      <Filter>Demo_Exts\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Light.cpp">
+      <Filter>Demo_Exts\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\RenderTarget.cpp">
+      <Filter>Demo_Exts\RTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Quad1.cpp">
+      <Filter>Demo_Exts\Model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\Render.h">
+      <Filter>Demo_Exts</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Device.h">
+      <Filter>Basic_Frame_Works</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Shader.h">
+      <Filter>Demo_Exts\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Light.h">
+      <Filter>Demo_Exts\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Map.h">
+      <Filter>Demo_Exts\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Camera.h">
+      <Filter>Demo_Exts\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\RenderTarget.h">
+      <Filter>Demo_Exts\RTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Quad1.h">
+      <Filter>Demo_Exts\Model</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="작업내용.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DATA.INI" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="fx\Demo.fx">
+      <Filter>Demo_Exts\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Demo4.fx">
+      <Filter>Demo_Exts\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Demo2.fx">
+      <Filter>Demo_Exts\Shader\fx</Filter>
+    </FxCompile>
+    <FxCompile Include="fx\Light.fx">
+      <Filter>Demo_Exts\Shader\fx</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

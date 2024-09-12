@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DXTK_INC>..\Yena\DXTK\Inc\</DXTK_INC>
+    <DXTK_LIB>..\Yena\DXTK\Lib\</DXTK_LIB>
+    <DXTEX_INC>..\Yena\DXTex\Inc\</DXTEX_INC>
+    <DXTEX_LIB>..\Yena\DXTex\Lib\</DXTEX_LIB>
+    <YENA_INC>..\Yena\Inc\</YENA_INC>
+    <YENA_LIB>..\Yena\Lib\</YENA_LIB>
+    <YENA_IncPath>$(YENA_INC);$(DXTK_INC);$(DXTEX_INC)</YENA_IncPath>
+    <YENA_LibPath>$(YENA_LIB);$(DXTK_LIB);$(DXTEX_LIB)</YENA_LibPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(YENA_IncPath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(YENA_LibPath);$(LibraryPath)</LibraryPath>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <Link />
+    <PreBuildEvent>
+      <Command>copy /y "$(YENA_LIB)*.dll"  ".\"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy /y "$(TargetPath)"  ".\"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="DXTK_INC">
+      <Value>$(DXTK_INC)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DXTK_LIB">
+      <Value>$(DXTK_LIB)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DXTEX_INC">
+      <Value>$(DXTEX_INC)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DXTEX_LIB">
+      <Value>$(DXTEX_LIB)</Value>
+    </BuildMacro>
+    <BuildMacro Include="YENA_INC">
+      <Value>$(YENA_INC)</Value>
+    </BuildMacro>
+    <BuildMacro Include="YENA_LIB">
+      <Value>$(YENA_LIB)</Value>
+    </BuildMacro>
+    <BuildMacro Include="YENA_IncPath">
+      <Value>$(YENA_IncPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="YENA_LibPath">
+      <Value>$(YENA_LibPath)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,63 @@
+//
+// DX Tutorials 작업 내용
+//
+// Update. 2013.02.04. 김기홍 Kihong Kim / mad_dog@hanmail.net
+// Update. 2016.12.28. (DX11)
+//
+
+■ T22 RenderTarget (I) 06 RenderToTexture (+Ratio@Fix)(1.6:1)
+
+
+* 3D 기하 구조의 이해
+* DX 렌더링 파이프라인의 이해
+* DX 렌더링 구조 단계별 연습. 
+* DX 수학라이브러리 사용 : "DirectXMath"
+* Yena + DirectX Toolkit 버전.
+* DirectXTK : SpriteFont 사용.
+* 32/64비트 지원
+* VisualStudio 프로젝트 속성/외부 참조.
+   : Yena/Yena.prop
+
+* 기술 데모 제작 기본 프로젝트.
+* 기본 제공 목록.
+ - 기본모델 : 주전자
+ - 지형 Map
+ - 자동+추적 카메라
+
+* 각 기능별 소스 분리 버전.
+ - Render.cpp 에서 기능 분리 --> Light.cpp, Camera.cpp 등..
+ - Demo.fx 에서 기능 분리 --> Light.fx 등..
+
+
+[작업 내역] ------------------------------------------------------------
+ 
+ * 렌더타겟 운용
+  : 장면 렌더링 후 월드에 표시 "TV"
+  : 2D 텍스처 기반  
+  : 렌더타겟 전용 깊이/스텐실 버퍼 운용.
+  : AA 적용.
+  : 뷰포트 멥핑(Viewport Mapping) 적용.
+  : RenderTarget.cpp/h
+
+
+* 렌더타겟 오류 수정
+  : 0. 레더타겟 크기 비율
+  : 1. 뷰포트멥핑 비율 (VP)
+  : 2. 촬영화면비율
+  : 3. 출력(Tv) 화면비율 
+  : 전체 비율을 1.6:1 로 맞춤.
+  
+
+
+* 렌더타겟 시현용 쿼드메쉬 추가.
+  : Quad1.cpp/h  
+
+
+
+
+ 
+- 문서끝-
+
+
+
+
